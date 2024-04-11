@@ -1,0 +1,828 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    
+}
+
+.logo img {
+    height: 50px; /* Adjust based on your logo's size */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+.header {
+    width: 100%;
+    overflow: hidden; /* Ensures the image doesn't exceed the header's bounds */
+}
+
+.header-image {
+    width: 100%;
+    height: 70%; /* Keeps the image's aspect ratio */
+    display: block; /* Removes bottom margin/spacing under the image */
+}
+
+.info-section {
+    display: grid;
+grid-template-columns: 1fr 1fr;
+    gap: 30px; /* Adjust the gap as needed */
+    padding: 30px; /* Adjust the padding as needed */
+  
+}
+
+.info-box {
+    border: 3px solid rgb(243, 243, 243); /* or the color that matches the image */
+    border-radius: 15px; /* Adjust the border-radius as needed */
+    padding: 40px; /* Adjust the padding as needed */
+    margin: 30px;
+    color: white; /* or the color that matches the image */
+    background-color: #333; /* or the color that matches the image */
+    display: flex;
+    flex-direction: column;
+}
+
+.info-box h2 {
+    margin-top: 0;
+    font-size: 24px; /* Adjust font-size as needed */
+    border-bottom: 2px solid rgb(236, 236, 236); /* or the color that matches the image */
+    padding-bottom: 10px; /* Adjust padding as needed */
+    margin-bottom: 20px; /* Adjust margin as needed */
+    font-family: cursive;
+}
+
+.info-box p {
+    font-size: 14px; /* Adjust font-size as needed */
+    flex-grow: 1; /* Ensures that the paragraphs take up available space */
+}
+
+.how-it-works {
+    max-width: 800px; /* Adjust the width as necessary */
+    margin: auto;
+    padding: 20px;
+    background-color: #fff; /* For a white box */
+    border: 2px solid #000; /* For a black border */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+}
+
+.how-it-works h2 {
+    text-align: center;
+    font-size: 28px; /* Adjust the size as necessary */
+    margin-bottom: 20px; /* Spacing after the title */
+}
+
+.step h3 {
+    font-size: 24px; /* Adjust the size as necessary */
+    color: #c00; /* Red color for the step numbers */
+    margin-bottom: 10px; /* Spacing after each step title */
+    text-align: center;
+}
+
+.step p {
+    font-size: 16px; /* Adjust the size as necessary */
+    line-height: 1.6; /* For better readability */
+    color: #333; /* Dark grey text color for better contrast */
+    text-align: center;
+}
+
+/* Add a border below each step except the last one */
+.step:not(:last-child) {
+    border-bottom: 1px solid #ddd; /* Light grey border */
+    padding-bottom: 15px; /* Spacing at the bottom of each step */
+    margin-bottom: 15px; /* Spacing between the steps */
+}
+
+.site-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr;
+    gap: 50px;
+    padding: 30px;
+    margin: 10px;
+    background: #333; /* Adjust background color as needed */
+    color: #fff;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+.footer-column h3 {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #fff; /* Adjust link color as needed */
+    line-height: 1.5; /* Adjust line height as needed */
+    display: block; /* Makes the entire list item area clickable */
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.footer-column ul li a:hover {
+    color: #0099ff; /* Change to desired hover color */
+}
+
+.our-services {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.our-services h2 {
+    font-size: 36px; /* Adjust as needed */
+    margin-bottom: 30px; /* Adjust as needed */
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Creates a responsive grid */
+    gap: 20px; /* Adjust as needed */
+}
+
+.service-item {
+    padding: 20px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.service-item h3 {
+    font-size: 24px; /* Adjust as needed */
+    margin-bottom: 15px; /* Adjust as needed */
+}
+
+.service-item p {
+    font-size: 16px; /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.learn-more {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 2px solid #000; /* Black border */
+    color: #000; /* Black text */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.learn-more:hover {
+    background-color: #000; /* Black background on hover */
+    color: #fff; /* White text on hover */
+}
+
+.membership-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.membership-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.membership-card {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    background-color: #0073e6; /* Costco blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: black; /* Change to black on hover */
+}
+
+.membership-benefits {
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    list-style: none; /* Removes default list styling */
+}
+
+.membership-benefits li {
+    margin-bottom: 10px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Space between items */
+}
+
+.category-item {
+    text-align: center; /* Centering text and links */
+    margin-bottom: 20px; /* Space below each category item */
+}
+
+.category-item img {
+    width: 80%; /* Ensure the image takes full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Space between image and text */
+    padding: 20px;
+}
+
+.category-item h3 {
+    margin: 10px 0; /* Space above and below the heading */
+    font-size: 1.5em; /* Size of the category title */
+    font-family: fantasy;
+}
+
+.visit-link {
+    display: inline-block; /* Allows margin and padding adjustments */
+    margin-top: 10px; /* Space above the link */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold; /* Make text bold */
+    color: #399ac7; /* Text color */
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.visit-link:hover {
+    text-decoration: underline; /* Underline text on hover for clarity */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .category-grid {
+        grid-template-columns: 1fr; /* One column on smaller screens */
+    }
+}
+
+
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px; /* Rounded edges */
+    background-color: white;
+    color: black;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px; /* Rounded edges */
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 20%;
+}
+
+button:hover {
+    background-color: blue; /* Color change on hover */
+    color: white;
+}
+
+.form-container {
+    background-color: #000;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.form-group{
+
+    padding: 20px;
+    margin: 10px;
+    font-family: cursive;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+.signup-form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.input-group {
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.input-group label {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    padding: 0 5px;
+    transition: top 0.3s, font-size 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 0.75rem;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #555; /* Darker background on hover */
+    color: #fff;
+}
+
+/* Add any additional browser-specific styles and reset styles as needed */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+  }
+  
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .product {
+    width: 300px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .product-image {
+    width: 100%;
+    display: block;
+  }
+  
+  .product-info {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .price {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .description {
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+  }
+  
+  .buy-button, .cart-button {
+    background-color: #5cb85c;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 49%;
+    margin: 2px 0;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .buy-button:hover, .cart-button:hover {
+    opacity: 0.9;
+  }
+  
+  .buy-button {
+    background-color: #0275d8;
+  }
+  
+  * {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+.signupbtn{
+    padding: 14px 20px;
+    margin-left: 10px;
+    background-color: #5cb85c;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+  padding: 10px;
+    border: none;
+    border-radius: 20px; /* Rounded edges */
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 20%;
+}
+
+/* Add padding to container elements */
+.container {
+    border: 1px solid #ccc; /* Border as per your original styling */
+    padding: 40px; /* Padding inside the container */
+    background: #f9f9f9; /* Light background for the form area */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 100%; /* Full width within the flex container */
+    max-width: 700px; /* Maximum width of the form */
+    margin: 20px; /* Margin around the container */
+}
+
+.signup-form {
+    display: flex; /* Use flexbox instead of grid */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* At least the height of the viewport */
+    background: #fff; /* Background color of the container */
+    padding: 20px; /* Padding around the form */
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+
+.box1 {
+    display: flex; /* Establish flex container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Minimum height of the viewport */
+    padding: 20px; /* Add some padding */
+    box-sizing: border-box; /* Include padding in the box's dimensions */
+}
+
+.main {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 100%; /* Full width of the flex item */
+    max-width: 600px; /* Maximum width of the form */
+    margin-top: 20px; /* Top margin for the form */
+    box-sizing: border-box; /* Include padding and border in the box's dimensions */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button[type="create"] {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    width: 100%; /* Full width of the input fields */
+    font-size: 16px;
+}
+
+button:hover[type="create"] {
+    background-color: #333;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .nav-links,
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .nav-links li {
+        padding: 10px 0; /* Increased vertical padding for touch targets */
+    }
+
+    .info-section {
+        grid-template-columns: 1fr; /* Stack elements vertically on smaller screens */
+    }
+
+    .info-box {
+        margin: 15px; /* Reduce margin on smaller screens */
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .how-it-works,
+    .site-footer {
+        padding: 15px; /* Reduce padding for smaller screens */
+        grid-template-columns: 1fr; /* Adjust the layout for a single column */
+    }
+    
+    .footer-column ul li a {
+        padding: 5px 0; /* Increase touch target size */
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.logo img {
+    height: 50px; /* Consider making the logo size responsive with max-height or using srcset for different sizes */
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+.header {
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-image {
+    width: 100%;
+    height: auto; /* Change to auto for maintaining aspect ratio */
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 30px;
+}
+
+.info-box {
+    border: 3px solid rgb(243, 243, 243);
+    border-radius: 15px;
+    padding: 40px;
+    margin: 30px;
+    color: white;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Additional styles for how-it-works and steps remain unchanged but consider adjusting paddings and margins for mobile */
+
+.site-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 30px;
+    background: #333;
+    color: #fff;
+}
+
+/* Additional footer styles remain the same */
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adjust navbar for mobile screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+    }
+    
+    .nav-links li,
+    .nav-links a {
+        padding: 10px 0;
+    }
+    
+    .logo img {
+        height: 40px; /* Make the logo smaller on mobile screens */
+    }
+}
+
+/* Adjust header image and info-section for better responsiveness */
+.header-image {
+    height: auto; /* Ensure the image's height adjusts to maintain aspect ratio */
+}
+
+@media (max-width: 768px) {
+    .info-section {
+        grid-template-columns: 1fr; /* Stack info boxes vertically on smaller screens */
+    }
+    
+    .info-box {
+        padding: 20px; /* Reduce padding on smaller screens for more space */
+        margin: 15px 0; /* Adjust margins for smaller screens */
+    }
+}
+
+/* Adjust how-it-works section and its elements */
+@media (max-width: 768px) {
+    .how-it-works {
+        padding: 10px; /* Less padding on smaller screens */
+        max-width: 100%; /* Allow it to fill the available space */
+    }
+    
+    .step h3 {
+        font-size: 20px; /* Smaller font size for step titles */
+    }
+    
+    .step p {
+        font-size: 14px; /* Smaller font size for text */
+    }
+}
+
+/* Adjust site footer for mobile layouts */
+@media (max-width: 768px) {
+    .site-footer {
+        grid-template-columns: 1fr; /* Stack footer columns vertically */
+        padding: 15px; /* Less padding to utilize space */
+    }
+    
+    .footer-column h3,
+    .footer-column ul li a {
+        font-size: 14px; /* Smaller font sizes for footer content */
+    }
+}
+
+/* Responsive adjustments for service items and other content */
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid to fit mobile screens */
+    }
+    
+    .service-item img {
+        width: 80px; /* Smaller images on mobile devices */
+    }
+    
+    .service-item h3,
+    .service-item p {
+        font-size: 18px; /* Adjust text size for readability */
+    }
+    
+    .membership-container h1,
+    .membership-benefits li {
+        font-size: 1.5em; /* Adjust heading size for mobile readability */
+    }
+    
+    .category-grid {
+        grid-template-columns: 1fr; /* Single column layout for categories */
+    }
+    
+    .input-container input,
+    .buttons button {
+        font-size: 16px; /* Increase font size for better readability on inputs and buttons */
+    }
+}
